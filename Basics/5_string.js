@@ -1,7 +1,7 @@
 const name = "Vipul"
 const repoCount = 50
 
-console.log(name + repoCount + " Value");
+console.log(name + repoCount + " Value");  //don't use these type only use backtiks {``}
 
 console.log(`Hello my name is ${name} and my repo count is ${repoCount}`);
 
@@ -26,10 +26,10 @@ const newStringOne = "   Vipul    "
 console.log(newStringOne);
 console.log(newStringOne.trim());
 
-const url = "https://hitesh.com/hitesh%20choudhary"
+const url = "https://Vipul.com/Vipul%20Thakur"
 
 console.log(url.replace('%20', '-'))
 
 console.log(url.includes('sundar'))
 
-console.log(gameName.split('-'));
+console.log(gameName.split('-')); //for removing anything like spaces in name 
