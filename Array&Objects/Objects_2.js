@@ -26,7 +26,7 @@ const obj4 = {5: "a", 6: "b"}
 // const obj3 = { obj1, obj2 }
 // const obj3 = Object.assign({}, obj1, obj2, obj4)
 
-const obj3 = {...obj1, ...obj2}
+const obj3 = {...obj1, ...obj2}     //it is destructuring of objectss
 // console.log(obj3);
 
 
@@ -70,6 +70,8 @@ const {courseInstructor: instructor} = course  //Renaming of objects key name li
 // console.log(courseInstructor);
 console.log(instructor);
 
+
+    // JSON API format it is using curly braces
 // {
 //     "name": "hitesh",
 //     "coursename": "js in hindi",
