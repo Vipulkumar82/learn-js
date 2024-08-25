@@ -34,3 +34,33 @@ function loginUserMessage(username = "sam"){
 }
 
 // console.log(loginUserMessage("hitesh"))
+
+//printing multiple values by a funtion 
+
+function printAllValues(...num1){       //while we giving num1 then it is printing only one number 
+                                    //and when we use ...num1(... is rest operator) then it prints all the numbers what we are passed 
+    //return(console.log(num1));
+}
+printAllValues(200,400,500);
+
+//object call in function 
+
+let user={
+    username : "vipul",
+    age : 18
+}
+function objectcall(anyobject){
+   //return console.log(`username ${anyobject.username} and age is ${anyobject.age}`)
+}
+objectcall(user);
+
+//array call in funtion
+
+let array =[20,23,34,55];
+
+function arrayCall(anyarray){
+    // console.log(anyarray[0]);
+    return anyarray[1];
+}
+// arrayCall(array);
+console.log(arrayCall(array));
