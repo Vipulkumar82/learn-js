@@ -1,4 +1,4 @@
-const coding = ["js", "ruby", "java", "python", "cpp"]
+// const coding = ["js", "ruby", "java", "python", "cpp"]
 
 // coding.forEach( function (val){
 //     console.log(val);
@@ -22,22 +22,22 @@ const coding = ["js", "ruby", "java", "python", "cpp"]
 
 
 //for each loop use in array of object 
-const myCoding = [
-    {
-        languageName: "javascript",
-        languageFileName: "js"
-    },
-    {
-        languageName: "java",
-        languageFileName: "java"
-    },
-    {
-        languageName: "python",
-        languageFileName: "py"
-    },
-]
+// const myCoding = [
+//     {
+//         languageName: "javascript",
+//         languageFileName: "js"
+//     },
+//     {
+//         languageName: "java",
+//         languageFileName: "java"
+//     },
+//     {
+//         languageName: "python",
+//         languageFileName: "py"
+//     },
+// ]
 
-myCoding.forEach( (item) => {
+// myCoding.forEach( (item) => {
     
-    console.log(item.languageName);
-} )
+//     console.log(item.languageName);
+// } )

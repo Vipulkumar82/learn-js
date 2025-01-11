@@ -1,10 +1,10 @@
-function sayMyName(){
-    console.log("V");
-    console.log("I");
-    console.log("P");
-    console.log("U");
-    console.log("L");
-}
+// function sayMyName(){
+//     console.log("V");
+//     console.log("I");
+//     console.log("P");
+//     console.log("U");
+//     console.log("L");
+// }
 
 // sayMyName()
 
@@ -25,13 +25,13 @@ const result = addTwoNumbers(3, 5)
 // console.log("Result: ", result);
 
 
-function loginUserMessage(username = "sam"){
-    if(!username){       //it is also written as if(username === undefined)
-        console.log("PLease enter a username");
-        return
-    }
-    return `${username} just logged in`
-}
+// function loginUserMessage(username = "sam"){
+//     if(!username){       //it is also written as if(username === undefined)
+//         console.log("PLease enter a username");
+//         return
+//     }
+//     return `${username} just logged in`
+// }
 
 // console.log(loginUserMessage("hitesh"))
 
@@ -63,4 +63,10 @@ function arrayCall(anyarray){
     return anyarray[1];
 }
 // arrayCall(array);
-console.log(arrayCall(array));
+// console.log(arrayCall(array));
+
+function multiply(a,b){
+    return (a*b);
+}
+x=multiply(4,5);
+console.log(x);

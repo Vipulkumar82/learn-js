@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events</title>
+    <style>
+        .res{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1 id="hello" style="cursor: pointer;">Vipul Thakur</h1>
+    <input style="background-color: red;" id="name_input" placeholder="hello" value="vipul" name="full_name"/> -->
+    <form>
+        <input placeholder="enter name" id="name_input" value="" />
+        <input placeholder="enter email" id="email_input" value=""/>
+        <button id="submit">submit</button>
+        <div id="result">
+
+        </div>
+    </form>
+    <!-- <video width="200" height="200" controls >
+        <source  src="./snap.mp4"></source> -->
+    <!-- </video> -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/nfSmatMKqqE?si=LxjMnyqlvMDo04bd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+    <script>
+        const nameInput = document.getElementById("name_input")
+        const emailInput = document.getElementById("email_input")
+        const btn = document.getElementById("submit")
+        const result = document.getElementById("result")
+
+        // console.log(nameInput,emailInput,btn)
+
+        btn.addEventListener("click",(e)=>{
+            e.preventDefault();
+            result.innerHTML = `<h1>${nameInput.value}</h1><h2>${emailInput.value}</h2>`
+            result.classList.add("res")
+        })
+    //     document.querySelector("").addEventListener("click", function () {
+    //     alert("Ouch! Stop poking me!");
+    // });
+    // document.querySelector("main")
+    // const firstH1 = document.querySelectorAll("h1")[2]
+
+    // // document.getElementsByClassName("nav")
+    // const myH1 = document.getElementById("hello");
+    // // <h1 id="hello">Vipul Thakur</h1>
+    // const myInput = document.getElementById("name_input")
+    // // myH1.value = "vicky"
+
+    // myH1.addEventListener("click",()=>{
+    //     console.log(myInput.style.backgroundColor)
+    //     myInput.style.backgroundColor==="red"?(myInput.style.backgroundColor="green"):(myInput.style.backgroundColor="red")
+    //     // myInput.placeholder=="hey"?"hello":"hey";
+    //     // myInput.value=="vicky"?"vipul":"vicky";
+    //     // myH1.style.color=="green"?"red":"green"
+    // })
+
+
+
+
+
+
+    </script>
+
+</body>
+</html>
