@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 20px;
+}
+#main{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.single-todo{
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px;
+    transition: 0.5s ease all;
+}
+.single-todo:hover{
+    background-color: rgb(98, 97, 97);
+    color: white;
+}

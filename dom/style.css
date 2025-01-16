@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: #4b4747; */
+}
+
+.fdiv{
+    margin: 40px;
+    padding: 1rem;
+    background: #d4d65d;
+    height: 300px;
+    width: 500px;
+}
+.sdiv{
+    margin: 40px;
+    padding: 1rem;
+    background: #5d9cd6;
+    height: 200px;
+    width: 300px;
+}
