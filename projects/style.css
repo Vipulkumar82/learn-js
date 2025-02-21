@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+    /* background-color: #504e4e; */
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 300px;
+
+}
+.buttons{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+
+}
+#green{
+    background-color: green;
+}
+#blue{
+    background-color:blue;
+}
+#purple{
+    background-color: purple;
+}
+#red{
+    background-color: red;
+}
