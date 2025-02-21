@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit and Delete Element</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="color: white; font-size: 40px;">
+    <!-- <div class="test">Hellohhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh</div> -->
+
+    <ul class="language">
+        <li>React</li>
+    </ul>
+
+
+</body>
+
+<script>
+    function addLanguage(languageName){
+        const li=document.createElement('li');
+        li.innerHTML=`${languageName}`;
+        document.querySelector(".language").
+        appendChild(li);
+    }
+    addLanguage("JavaScript");
+    addLanguage("Python");
+
+   //Optimised function without using innerHTML
+
+   function optimisedLang(langname){
+    const li= document.createElement('li');
+    li.appendChild(document.createTextNode(`${langname}`));
+    document.querySelector(".language").appendChild(li);
+   }
+   optimisedLang("GOLang");
+   optimisedLang("Html");
+   optimisedLang("Css");
+
+
+   //Edit Element via assigning through innerhtml or ReplaceWith method
+
+   let thirdLang=document.querySelector("li:nth-child(3)");
+   console.log(thirdLang);
+   //using innerHTML
+   thirdLang.innerHTML="Vipul";
+
+   // THrough Replacing
+
+   const fourthLang=document.querySelector("li:nth-child(4)")
+   let newLi=document.createElement('li');
+   newLi.textContent="mojo";
+   fourthLang.replaceWith(newLi);
+
+   //Changing OUter Html
+
+   const firstLanguage=document.querySelector("li:first-child");
+   firstLanguage.outerHTML='<li>Java</li>';
+
+
+
+   //REMOVE .........(simply take their position and remove();)
+
+   const lastElement=document.querySelector("li:last-child");
+   lastElement.remove();  //CSS removed
+
+
+
+
+</script>
+</html>

@@ -30,10 +30,10 @@ bodyTag
 
 Whenever we append child it will shifted as last element
 
-bodyTag.appendChild(heading)
+bodyTag.appendChild(heading);
 <h1>​THAKUR​</h1>
 
-INSRT ADJACENT ELEMENT ()  
+                    INSRT ADJACENT ELEMENT ()  
 
 POSITION : 1. beforeBegin 2. afterBegin 3. beforeEnd 4. afterEnd
 HTML CONTENT : the content we want to add*/

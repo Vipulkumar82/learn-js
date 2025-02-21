@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #212121;
+}
+/* .test{
+    height: 200px;
+    width: 300px;
+    font-size: 30px;
+    font-weight: 400;
+    color: aliceblue;
+    text-align: center;
+    background-color: burlywood;
+    overflow: auto;
+    word-wrap: break-word;
+    white-space: normal;
+} */
