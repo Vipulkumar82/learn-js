@@ -1,0 +1,35 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.mainDiv{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #212121;
+}
+.container{
+    height: 500px;
+    width: 500px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #e9d14c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+#submit{
+    height: 40px;
+    width: 150px;
+    color: black;
+    background-color: #bfb4e2;
+    border-radius: 30px;
+    cursor: pointer;
+}
