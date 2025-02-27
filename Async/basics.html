@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async Basics</title>
+</head>
+<body>
+    <h1>Vipul Kumar</h1>
+    <p>Time: </p>
+    <button>Change</button>
+</body>
+<script>
+//First way to set setTimeout
+
+    // setTimeout(function(){
+    //     console.log("Vipul Thakur Is the Best Coder");
+    // },2000)
+
+//setTimeout Taking handler so we give reference of function so..
+
+    // const naam=function (){
+    //     console.log("Thakur Sahab...");
+    // }
+    // setTimeout(naam,2000);
+
+//Changing text on website
+
+let heading=document.querySelector('h1');
+    const ChangeHeading=function(){
+        heading.innerHTML="Vipul Thakur...";
+    }
+    const referenceOfTimeout=setTimeout(ChangeHeading,2000);
+
+
+// ClearTimeOut for stoping timeout (put on button for stoping)
+    
+// clearTimeout(referenceOfTimeout);
+
+
+
+// USe of setInterval
+
+
+// const displayTime=function(){
+//     console.log(`Vipul Thakur${Date.now()}`)
+// }
+// // const namePrinting= setInterval(displayTime,2000)
+
+// // setInterval takes three parameters including variables
+// const newPrinting=function(str){
+//     console.log(`Vipul Thakur${Date.now()}${str}`)
+// }
+// const namePrinting= setInterval(newPrinting,2000,'  is Genius')
+
+// //for stoping printing
+// clearInterval(namePrinting)
+
+
+</script>
+</html>

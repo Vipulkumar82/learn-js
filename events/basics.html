@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>htnml Events </title>
+    <title>Events </title>
 </head>
 <body style="background-color: #414141; color: aliceblue;">
     <h2>Amazing image</h2>
@@ -31,15 +31,15 @@
     // clientX, clientY, screenX, screenY
     // altkey, ctrlkey, shiftkey, keyCode
 
-    document.getElementById('images').addEventListener('click', function(e){
-        console.log("clicked inside the ul");
+    // document.getElementById('images').addEventListener('click', function(e){
+    //     console.log("clicked inside the ul");
         
-    },) // where true is present that div performed first 
-    document.getElementById('owl').addEventListener('click', function(e){
-        console.log("owl clicked");
-        e.stopPropagation() 
-    //using stropPropagation bubbling will not performed basically if we click on owl then after that ul obviously clicked for preventing this we use StopPropagation
-    },)
+    // },) // where true is present that div performed first 
+    // document.getElementById('owl').addEventListener('click', function(e){
+    //     console.log("owl clicked");
+    //     e.stopPropagation() 
+    // //using stropPropagation bubbling will not performed basically if we click on owl then after that ul obviously clicked for preventing this we use StopPropagation
+    // },)
     
 
     // document.getElementById('google').addEventListener('click',function(e){
@@ -50,18 +50,19 @@
     //     console.log("google clicked");
     // }, false)
    
-    
-    // document.querySelector('#images').addEventListener('click', function(e){
-    //     console.log(e.target.tagName);
-    //     if (e.target.tagName === 'IMG') {
-    //         console.log(e.target.id);
-    //         let removeIt = e.target.parentNode
-    //         removeIt.remove()
-    //     }
-    
-        
-    // })
-    
-    //removeIt.parentNode.removeChild(removeIt)
+
+
+
+    document.querySelector('#images').addEventListener('click',function(e){
+        // console.log(e.target.tagName);
+        if(e.target.tagName==='IMG'){
+            console.log(e.target.id);
+            let removeIt=e.target.parentNode;
+            // removeIt.remove()  //for direct remove element 
+            removeIt.parentNode.removeChild(removeIt);  //first selecting parent node then select which children should delete
+        }
+    })
+
+
 </script>
 </html>
