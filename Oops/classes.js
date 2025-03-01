@@ -19,22 +19,41 @@
 
         // Using this we enter enteties.
 
-class product{
-    constructor(n,p,r){
-        this.name=n;
-        this.price=p;
-        this.rating=r;
-        // return 50;
-           //if we returning primitive data then it will unchanged in constructor
-            // return {x:10,y:28};
-            //but if we return non primitive data thenit will be returned
-        }
-    display(){
-        console.log("Printing thorugh Display function:--",this.name);
-    }
+// class product{
+//     constructor(n,p,r){
+//         this.name=n;
+//         this.price=p;
+//         this.rating=r;
+//         // return 50;
+//            //if we returning primitive data then it will unchanged in constructor
+//             // return {x:10,y:28};
+//             //but if we return non primitive data thenit will be returned
+//         }
+//     display(){
+//         console.log("Printing thorugh Display function:--",this.name);
+//     }
+// }
+
+// const p= new product("Vipul's pen",3000,10);
+
+// console.log(p)
+// p.display();
+
+
+
+
+//Function Constructor
+function User(name,age){
+        this.name=name
+        this.age=age;
 }
+const u =new User("Vipul",24);
+console.log(u);
 
-const p= new product("Vipul's pen",3000,10);
 
-console.log(p)
-p.display();
+let x = {
+    u: User
+};
+
+x.u("Thakur",23)
+console.log(x)
