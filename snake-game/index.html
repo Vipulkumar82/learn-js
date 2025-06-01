@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Snake Game</h1>
+        <div id="score">Score: 0</div>
+        <div id="high-score">High Score: 0</div>
+        <div class="speed-control">
+            <label for="speed-range">Speed:</label>
+            <input type="range" id="speed-range" min="50" max="300" step="10" value="100">
+            <span id="speed-value">100</span> ms
+        </div>
+        <canvas id="game-canvas" width="400" height="400"></canvas>
+        <button id="restart-btn" style="display:none;">Restart</button>
+        <div id="highscore-popup" class="popup" style="display:none;">
+            <div class="popup-content">
+                <h2>🎉 New High Score! 🎉</h2>
+                <p id="popup-score"></p>
+                <button id="close-popup">Close</button>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

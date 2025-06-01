@@ -1,0 +1,114 @@
+body {
+    background: linear-gradient(135deg, #232526, #414345);
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-container {
+    background: #222;
+    padding: 2rem 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(44, 62, 80, 0.2);
+    width: 100%;
+    max-width: 480px;
+    text-align: center;
+}
+
+h1 {
+    color: #00ff00;
+    margin-bottom: 1rem;
+    font-family: monospace;
+}
+
+#score {
+    color: #fff;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+#game-canvas {
+    background: #111;
+    border: 2px solid #00ff00;
+    display: block;
+    margin: 0 auto 1rem auto;
+}
+
+#restart-btn {
+    padding: 0.7rem 1.5rem;
+    background: #00ff00;
+    color: #111;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#restart-btn:hover {
+    background: #00cc00;
+}
+
+#high-score {
+    color: #ffd700;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.speed-control {
+    margin-bottom: 1rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.speed-control input[type="range"] {
+    accent-color: #00ff00;
+}
+
+.popup {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.popup-content {
+    background: #222;
+    color: #fff;
+    padding: 2rem 2.5rem;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(44, 62, 80, 0.3);
+}
+
+.popup-content h2 {
+    color: #ffd700;
+    margin-bottom: 1rem;
+}
+
+.popup-content button {
+    margin-top: 1rem;
+    padding: 0.7rem 1.5rem;
+    background: #00ff00;
+    color: #111;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.popup-content button:hover {
+    background: #00cc00;
+}
